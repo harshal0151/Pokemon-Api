@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@600&family=Roboto&display=swap');
+
+/* ALL */
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #403f3f;
+}
+
+/* WRAPS BODY */
+.gif{
+    margin-left: 5rem;
+}
+    
+
+header img{
+ width: 15%;
+ margin: 2rem 3rem;
+
+ 
+}
+
+.hero{
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 10px;
+    margin: 0 0 1rem 0;
+}
+
+video{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+/* BODY */
+body {
+    background-color: white;
+    margin:  0 5rem;
+}
+
+/* PAGE TITLE */
+h1 {
+    font-family: 'Grandstander', cursive;
+    text-align: center;
+    font-size: 70px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    margin: 0 2rem;
+    align-items: center;
+}
+
+/* SEARCH BAR*/
+#pokemon-search-form  {
+    margin-left: 2rem;
+    width: 35%;
+    position: relative;
+}
+#pokemon-search-form img{
+    width: 30px;
+    position: absolute;
+    margin:  0 1rem;
+    
+}
+
+#pokemon-type-filter input{
+    border-radius: 10px;
+    padding: 0.3rem 2rem;  
+    border: #51c4e7 solid 2px;
+    background-color: white;
+    color: #403f3f;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+#pokemon-search-input{
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    border: #51c4e7 solid 2px;
+     
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+
+.form-spacers{
+    height: 10px;
+}
+
+.type-filter{
+    margin: 10px;
+    border-radius: 10px;
+    padding: 0.3rem 1rem;
+    border: #51c4e7 solid 2px;
+}
+button{
+    border-radius: 10px;
+    padding: 0.3rem 2rem;  
+    border: #51c4e7 solid 2px;
+    background-color: white;
+    color: #403f3f;
+    cursor: pointer;
+    font-weight: 600;
+}
+#pokedex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* flip card container  */
+.flip-card {
+    margin: 20px;
+    width: 200px;
+    height: 275px;
+    text-align: center;
+    justify-content: center;
+    perspective: 1000px;
+    opacity: 0.95;
+}
+
+/*  position the front and back side */
+.flip-card-inner {
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+
+.front-pokemon-card, .back-pokemon-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.front-pokemon-card {
+    z-index: 2;
+    transform: rotateY(0);
+}
+
+.back-pokemon-card {
+    transform: rotateY(180deg);
+    background-color: #C3CBDC;
+}
+
+.front-pokemon-image, .back-pokemon-image {
+    position: relative;
+    top: 50px;
+}
+
+
+.front-poke-id, .back-poke-id {
+    position: relative;
+    top: -100px;
+    width: 100%;
+    background-color: whitesmoke;
+    color: #555555;
+    justify-content: left;
+}
+
+.front-pokemon-type {
+    width: fit-content;
+    padding: 0.5rem 2rem;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    /* left: 75px; */
+    margin: auto;
+    bottom: -12.5px;
+    font-size: small;
+}#grass {
+    background: linear-gradient(to top, #8cc14d, #6b9f3c); /* Gradient from a slightly darker green to a deeper green */
+}
+
+#bug {
+    background: linear-gradient(to top, #6ca93a, #506f29); /* Gradient from a slightly darker green to a deeper green */
+}
+
+#fire {
+    background: linear-gradient(to top, #ff8730, #b4661d); /* Gradient from a brighter orange to a deeper orange */
+}
+
+#water {
+    background: linear-gradient(to top, #3c8abf, #205f7c); /* Gradient from a slightly darker blue to a deeper blue */
+}
+
+#ice {
+    background: linear-gradient(to top, #5bc9ea, #317b8f); /* Gradient from a brighter blue to a deeper blue */
+}
+
+#electric {
+    background: linear-gradient(to top, #efda67, #a38c24); /* Gradient from a brighter yellow to a deeper yellow */
+}
+
+#psychic {
+    background: linear-gradient( #f884c3, #a74d8e); /* Gradient from a brighter pink to a deeper pink */
+}
+
+#fairy {
+    background: linear-gradient(to top, #fca7e4, #ad5b99); /* Gradient from a brighter pink to a deeper pink */
+}
+
+#ghost {
+    background: linear-gradient(to top, #8b74b2, #5c4075); /* Gradient from a brighter purple to a deeper purple */
+}
+
+#ground {
+    background: linear-gradient(to top, #f4e14b, #b78825); /* Gradient from a brighter yellow to a deeper yellow */
+}
+
+#poison {
+    background: linear-gradient(to top, #c888d1, #864a8e); /* Gradient from a brighter purple to a deeper purple */
+}
+
+#normal {
+    background: linear-gradient(to top, #99a0a5, #5e666b); /* Gradient from a slightly darker grey to a deeper grey */
+}
+
+#dragon {
+    background: linear-gradient(to top, #d4af37, #7f651f); /* Gradient from a brighter gold to a deeper gold */
+}
+
+#fighting {
+    background: linear-gradient(to top, #e3782c, #8e4b1e); /* Gradient from a brighter orange to a deeper orange */
+}
+
+#rock {
+    background: linear-gradient(to top, #b49726, #6f4f15); /* Gradient from a slightly darker brown to a deeper brown */
+}

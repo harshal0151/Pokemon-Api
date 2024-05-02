@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Pockemone Cards</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <header>
+        <img src="./pngegg.png" alt="" />
+      </header>
+      
+    </div>
+      <div class="hero">
+        <video src="./pokemon-in-the-wild.mp4" autoplay loop muted></video>
+      </div>
+      <div class="gif">
+        <div class="tenor-gif-embed" data-postid="16257256" data-share-method="host"  data-aspect-ratio="1.25984" data-width="10%"><a href="https://tenor.com/view/flygon-pokemon-gif-16257256">Flygon Pokemon Sticker</a>from <a href="https://tenor.com/search/flygon-stickers">Flygon Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+     </div>
+      <main>
+
+   
+
+        <div class="header">
+          <form id="pokemon-search-form" class="" action="" method="GET">
+            <input
+              id="pokemon-search-input"
+              type="text"
+              name=""
+              placeholder="Enter Pokémon Name"
+            />
+            <img src="./search.png" alt="" />
+          </form>
+
+          <form id="pokemon-type-filter">
+            <select name="type" class="type-filter">
+              <option value="">Types</option>
+            </select>
+            <input type="submit" value="Filter by Type" />
+
+            <button onClick="window.location.reload();">Reset</button>
+          </form>
+        </div>
+        <section class="form-spacers"></section>
+        <section id="pokedex"></section>
+      </main>
+    </div>
+    <script defer src="script.js"></script>
+  </body>
+</html>
